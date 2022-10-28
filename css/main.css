@@ -1,9 +1,34 @@
-.body {
+.navbar {
+    color: white;
+    justify-content: space-between;
+    background-color: white transparent;
+}
+
+.section-2 {
+    margin-bottom: 100px;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+}
+
+.heading-3 {
+    display: flex;
+    color: white;
+    position: center;
+    margin: 10px;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    line-height: 132%;
+    font-weight: 400;
     background-color: black;
 }
 
-#navbarNav {
-    color: white;
-    display: flex;
-    justify-content: space-around;
+.navbar-nav {
+    justify-content: space-between;
 }
+
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Judson', serif;
+font-family: 'Urbanist', sans-serif; */
+

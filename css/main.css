@@ -65,6 +65,38 @@ div {
     align-items: center;
 }
 
+.column-3 {
+    position: relative;
+    left:0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+img.off {
+    position: relative;
+    z-index: -1;
+}
+    
+img.on {
+    position: absolute;
+    animation-name: spotlightOn;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    
+}
+
+@keyframes spotlightOn {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:100;
+    }
+}
+
 .container-3 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -74,7 +106,6 @@ div {
 }
 
 .column-4 {
-    animation-delay: 3s;
     animation: 2s anim-lineUp ease-out 1;
     }
     @keyframes anim-lineUp {

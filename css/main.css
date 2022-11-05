@@ -26,7 +26,6 @@ div {
     font-size: 60px;
     line-height: 132%;
     font-weight: 400;
-    background-color: rgb(79, 52, 113);
 }
 
 .w-container {
@@ -131,8 +130,15 @@ img.on {
     }
 }
 
+.section-3 {
+    background-image: linear-gradient(#4f3471, #2d1748 75%);
+    padding-bottom: 100px;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+}
+
 .heading-2 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 25pt;
     padding-bottom: 15px;
 }
@@ -140,14 +146,22 @@ img.on {
 .heading-4 {
     font-size: 50pt;
     font-family: 'Cormorant Garamond', serif;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .content-2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 14pt; 
+    font-size: 18pt; 
     justify-content: baseline;
     padding: 10px;
+}
+
+.section-4 {
+    background-image: linear-gradient(#2d1748, #5dca9f 75%);
+    padding-top: 150px;
+    padding-bottom: 50px;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
 }
 
 /* font-family: 'Comfortaa', cursive;

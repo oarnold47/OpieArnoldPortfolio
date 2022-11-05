@@ -4,10 +4,11 @@ div {
 
 .navbar-nav {
     color: white;
+    text-align: end;
     flex-direction: row-reverse;
     justify-content: space-around;
     margin: 25px;
-    width: 50%;
+    width: 100%;
 }
 
 .section-2 {
@@ -82,18 +83,22 @@ img.off {
 img.on {
     position: absolute;
     animation-name: spotlightOn;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-direction: alternate;
     
 }
 
 @keyframes spotlightOn {
     0% {
-    opacity:0;
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
     }
     100% {
-    opacity:100;
+        opacity: 100;
     }
 }
 
@@ -126,6 +131,24 @@ img.on {
     }
 }
 
+.heading-2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 25pt;
+    padding-bottom: 15px;
+}
+
+.heading-4 {
+    font-size: 50pt;
+    font-family: 'Cormorant Garamond', serif;
+    padding-bottom: 60px;
+}
+
+.content-2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14pt; 
+    justify-content: baseline;
+    padding: 10px;
+}
 
 /* font-family: 'Comfortaa', cursive;
 font-family: 'Cormorant Garamond', serif;

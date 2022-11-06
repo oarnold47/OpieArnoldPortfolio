@@ -164,6 +164,10 @@ img.on {
     transition: opacity 300ms ease;
 }
 
+.shadowImage {
+    filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.3));
+}
+
 /* font-family: 'Comfortaa', cursive;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Judson', serif;

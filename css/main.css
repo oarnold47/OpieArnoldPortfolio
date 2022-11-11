@@ -9,6 +9,7 @@ div {
     justify-content: space-around;
     margin: 25px;
     width: 100%;
+    font-family: 'Judson', serif;
 }
 
 .section-2 {
@@ -137,6 +138,14 @@ img.on {
     transition: opacity 300ms ease;
 }
 
+.display-1 {
+    font-family: 'Judson', serif;
+    font-size: 100pt;
+    padding-bottom: 50px;
+    justify-content: center;
+    font-style: italic;
+}
+
 .heading-2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25pt;
@@ -162,10 +171,20 @@ img.on {
     padding-bottom: 50px;
     -webkit-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
+    color: #2d1748;
+    font-weight: 400;
 }
 
 .shadowImage {
     filter: drop-shadow(-10px 10px 2px rgba(0, 0, 0, 0.3));
+}
+
+.section-4.heading-3 {
+    color: #2d1748;
+}
+
+.row {
+    margin: 0px 50px;
 }
 
 /* font-family: 'Comfortaa', cursive;

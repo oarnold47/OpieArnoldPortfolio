@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(79, 52, 113);
+    color: white;
+}
+
 div {
     display: block;
 }
@@ -11,23 +16,14 @@ div {
     width: 100%;
     font-family: 'Judson', serif;
     font-size: larger;
+    font-style: italic;
 }
 
 .section-2 {
+    width: auto;
     margin-bottom: 100px;
     -webkit-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
-}
-
-.heading-3 {
-    display: flex;
-    color: white;
-    position: center;
-    margin: 10px;
-    font-family:  'Judson', serif;;
-    font-size: 60px;
-    line-height: 132%;
-    font-weight: 400;
 }
 
 .w-container {
@@ -133,6 +129,7 @@ img.on {
 }
 
 .section-3 {
+    width: 100%;
     background-image: linear-gradient(#4f3471, #2d1748 75%);
     padding-bottom: 100px;
     -webkit-transition: opacity 300ms ease;
@@ -151,22 +148,47 @@ img.on {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25pt;
     padding-bottom: 15px;
+    font-style: italic;
+}
+
+.heading-3 {
+    display: flex;
+    color: white;
+    position: center;
+    margin: 10px;
+    font-family: 'Judson', serif;
+    font-size: 60px;
+    line-height: 132%;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .heading-4 {
     font-size: 50pt;
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 60px;
+    font-style: italic;
+}
+
+.heading-5 {
+    color:#4f3471;
+    font-size: 15pt;
+    font-family: 'Judson', serif;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 .content-2 {
-    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
     font-size: 18pt; 
     justify-content: baseline;
     padding: 10px;
+    font-weight: lighter;
 }
 
 .section-4 {
+    width: 100%;
     background-image: linear-gradient(#2d1748, #5dca9f 75%);
     padding-top: 150px;
     padding-bottom: 50px;
@@ -188,8 +210,30 @@ img.on {
     margin: 0px 50px;
 }
 
-/* font-family: 'Comfortaa', cursive;
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-instagram:hover, .fa-linkedin:hover {
+    color: #2d1748;
+}
+.fab {
+    color: rgb(79, 52, 113);
+}
+/* footer styling */
+#footer {
+    text-align: right;
+    justify-content: space-evenly;
+    padding: 30px;
+    background-color: #5dca9f;
+}
+
+/* Fonts
+font-family: 'Comfortaa', cursive;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Judson', serif;
-font-family: 'Urbanist', sans-serif; */
+font-family: 'Questrial', sans-serif;
+font-family: 'Urbanist', sans-serif; 
+*/
 

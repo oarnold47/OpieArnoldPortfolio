@@ -304,6 +304,10 @@ img.on {
     background-color: #2d1748;
 }
 
+.btn:active {
+    background-color: #760b6f;
+}
+
 /* footer styling */
 #footer {
     text-align: right;

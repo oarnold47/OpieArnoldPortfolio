@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
     fields.firstName = document.getElementById('name');
     fields.email = document.getElementById('email');
     fields.subject = document.getElementById('subject');
@@ -26,3 +26,4 @@ document.addEventListener("DOMContentLoaded", function() {
    
     return valid;
    }
+*/

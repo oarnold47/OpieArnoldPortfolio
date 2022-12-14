@@ -78,7 +78,7 @@
   <div class="container-3 w-container">
     <div class="columns-3 w-row">
               
-      <div class="column-5 w-col w-col-7">
+      <div class="column-6 w-col w-col-6">
         <div>
           <h2 class="heading-2">Just a little<br>
           </h2>
@@ -111,11 +111,11 @@
   <div class="container-3 w-container">
     <div class="columns-3 w-row">
 
-      <div class="column-6 w-col w-col-5">
+      <div class="column-6 w-col w-col-6">
         <img class="shadowImage" src="./css/Images/Dani Opie and Alfie Walk at Twilight.png" loading="I'm procrastinating" width="510" srcset="./css/Dani Opie and Alfie Walk at Twilight.png, ./css/Dani Opie and Alfie Walk at Twilight.png 577w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, 49vw" alt="Opie walking with Dani and Alfie but as a Van Gogh">
       </div>
 
-      <div class="column-5 w-col w-col-7">
+      <div class="column-6 w-col w-col-6">
         <div>
           <h1 class="heading-3">My Story<br>
           </h1>
@@ -203,7 +203,7 @@
 <!-- Contact Me -->
   <section id="contactMe">
     <div class="container mt-3 contactContent">
-        <h1 class="heading-3 text-center">Let's write stories together</h1>
+        <h1 id="stories" class="heading-3 text-center">Let's write stories together</h1>
 
         <div class="row mt-4">
             <div class="col-lg-6">
@@ -221,7 +221,7 @@
 
             <div class="col-lg-6">
                 <!-- form fields -->
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false">
                     <input type="text" class="form-control form-control-lg" placeholder="Name" id="name">
                     <input type="email" class="form-control mt-3" placeholder="Email" id="email">
                     <input type="text" class="form-control mt-3" placeholder="Subject" id="subject">
@@ -229,7 +229,7 @@
                         <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
                     </div>
                 </form>
-                <button type="button" class="btn btn-success mt-3" onClick="sendContact();">Contact Me</button>
+                <button type="button" class="btn btn-success mt-3" onClick="sendEmail();">Contact Me</button>
                 
             </div>
 
@@ -237,51 +237,30 @@
     </div>
   </section>
 
-    <!-- Gallery v1
-  <div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="../OpieArnoldPortfolio/css/LaLaLandDrawing.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
 
-      <img
-        src="../OpieArnoldPortfolio/css/AstroFrog.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
+  <!--Javascript Email SMTJS-->
 
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="../OpieArnoldPortfolio/css/BobNewbyComicCover.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        SecureToken: "c21f552e-bcd3-448f-9c7f-76c4720085a3",
 
-      <img
-        src="../OpieArnoldPortfolio/css/ITProjectorScene.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
+        To : 'opie.r.arnold@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Message from OpieArnold.com",
+        Body : "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Subject: " + document.getElementById("subject").value
+            + "<br> Comment: " + document.getElementById("comment").value
+      }).then(
+        message => alert("Your message has been sent! I'll get back to you as soon as I can.")
+      );
+    }
+  </script>
 
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="../OpieArnoldPortfolio/css/desk.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
 
-      <img
-        src="../OpieArnoldPortfolio/css/CalvinHobbesOtGWFinal.jpg"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div>
-  Gallery v1 -->
+  <!--Photo Gallery -->
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script id="bs5-lightbox"></script>
@@ -298,7 +277,6 @@
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js" integrity="sha512-cTQeM/op796Fp1ZUxfech8gSMLT/HvrXMkRGdGZGQnbwuq/obG0UtcL04eByVa99qJik7WlnlQOr5/Fw5B36aw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-
 
   <!-- footer section-->
   <footer id="footer">
